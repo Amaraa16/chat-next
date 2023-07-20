@@ -1,0 +1,23 @@
+get http://localhost:3000/api/messages
+
+### 
+
+post http://localhost:3000/api/messages
+content-type: application/json
+
+{
+    "title": "it workdsa??"
+}
+###
+
+put http://localhost:3000/api/messages/64b8c7f56e4282b12bb9b349
+content-type: application/json
+
+{
+    "title": "yearrrrrrr"
+}
+
+
+###
+
+delete http://localhost:3000/api/messages/64b8be906e4282b12bb633cb
