@@ -9,9 +9,11 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       break;
     case "POST":
       const { title } = req.body;
+      const { pfp } = req.body;
       const Created = await mongo("insertOne", {
         document: {
           title: title,
+          pfp: pfp,
         },
       });
       res.status(200).json(Created);
